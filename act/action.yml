@@ -7,7 +7,7 @@ inputs:
     required: true
     default: 'World'
   second-input:  # id of input
-    description: 'Who NOT to greet'
+    description: 'Who also to greet'
     required: true
     default: 'insafd'
 outputs:
@@ -18,3 +18,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+    - ${{ inputs.second-input }}
